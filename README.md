@@ -1,5 +1,5 @@
 # my_zsh
-my zsh setting
+Download it as ~/.zshrc & restart zsh
 
 # plugin:
 
