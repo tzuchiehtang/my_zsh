@@ -1,7 +1,8 @@
 # my_zsh
 my zsh setting
 
-##plugin:
+# plugin:
+
     'plugins/bundler'
     'plugins/colored-man-pages'
     'plugins/completion'
