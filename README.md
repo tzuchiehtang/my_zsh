@@ -1,7 +1,8 @@
 # my_zsh
-my zsh setting
+Download it as ~/.zshrc & restart zsh
 
-##plugin:
+# plugin:
+
     'plugins/bundler'
     'plugins/colored-man-pages'
     'plugins/completion'
