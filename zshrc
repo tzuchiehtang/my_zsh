@@ -527,8 +527,32 @@ fi
 #                  other env
 # ==========================================================
 export WORKON_HOME=$HOME/.virtualenvs
-export VIRTUALENVWRAPPER_SCRIPT=/Library/Frameworks/Python.framework/Versions/3.7/bin/virtualenvwrapper.sh
-export VIRTUALENVWRAPPER_PYTHON=/Library/Frameworks/Python.framework/Versions/3.7/bin/python3
-export VIRTUALENVWRAPPER_VIRTUALENV=/Library/Frameworks/Python.framework/Versions/3.7/bin/virtualenv
-export VIRTUALENVWRAPPER_VIRTUALENV_ARGS='--no-site-packages'
-source /Library/Frameworks/Python.framework/Versions/3.7/bin/virtualenvwrapper.sh
+# export VIRTUALENVWRAPPER_SCRIPT=/Library/Frameworks/Python.framework/Versions/3.7/bin/virtualenvwrapper.sh
+# export VIRTUALENVWRAPPER_SCRIPT=/usr/local/opt/python@3.9/Frameworks/Python.framework/Versions/3.9/bin/virtualenvwrapper.sh
+# export VIRTUALENVWRAPPER_PYTHON=/usr/local/opt/python@3.9/Frameworks/Python.framework/Versions/3.9/bin/python3
+# export VIRTUALENVWRAPPER_VIRTUALENV=/usr/local/opt/python@3.9/Frameworks/Python.framework/Versions/3.9/bin/virtualenv
+# export VIRTUALENVWRAPPER_VIRTUALENV_ARGS='--no-site-packages'
+# source /usr/local/opt/python@3.9/Frameworks/Python.framework/Versions/3.9/bin/virtualenvwrapper.sh
+#
+# # Setting PATH for Python 3 installed by brew
+export PATH=/usr/local/share/python:$PATH
+
+# Configuration for virtualenv
+export WORKON_HOME=$HOME/.virtualenvs
+export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python3
+export VIRTUALENVWRAPPER_VIRTUALENV=/usr/local/bin/virtualenv
+source /usr/local/bin/virtualenvwrapper.sh
+export PATH="/usr/local/sbin:$PATH"
+export PATH="/usr/local/opt/ruby/bin:$PATH"
+export PATH=$PATH:~/.npm-global/bin
+# export PATH="$PATH:$HOME/git/flutter/bin"
+export PATH="$PATH=/usr/local/Cellar/yarn/1.22.4/bin"
+alias ng="/Users/jason/.npm-global/lib/node_modules/@angular/cli/bin/ng"
+
+# alias python3=/usr/local/bin/python3
+# alias pip3=/usr/local/bin/pip3
+alias python3.7=/usr/local/opt/python@3.7/bin/python3
+alias python3.8=/usr/local/opt/python@3.8/bin/python3
+# set for home brew
+export HOMEBREW_NO_AUTO_UPDATE=1
+export HOMEBREW_NO_INSTALL_CLEANUP=1
