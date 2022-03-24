@@ -371,10 +371,9 @@ if !filereadable(vundle_readme)
     echo "Installing Vundle.."
     echo ""
     silent !mkdir -p ~/.vim/bundle
-    silent !mkdir -p ~/.vim/colors
-    silent https://raw.githubusercontent.com/tomasr/molokai/master/colors/molokai.vim
-    silent !mv molokai.vim ~/.vim/colors
     silent !git clone https://github.com/gmarik/vundle ~/.vim/bundle/vundle
+    silent !mkdir -p ~/.vim/colors
+    silent !wget -O ~/.vim/colors/molokai.vim https://raw.githubusercontent.com/tomasr/molokai/master/colors/molokai.vim
     let iCanHazVundle=0
 endif
 
